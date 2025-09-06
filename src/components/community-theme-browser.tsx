@@ -24,7 +24,7 @@ export const CommunityThemeBrowser: React.FC<CommunityThemeBrowserProps> = ({
   const [copied, setCopied] = useState(false)
 
   // 获取所有标签
-  const allTags = ['all', ...new Set(communityThemes.flatMap(theme => theme.tags))]
+  const allTags = ['all', ...Array.from(new Set(communityThemes.flatMap(theme => theme.tags)))]
   
   // 过滤主题
   const filteredThemes = selectedTag === 'all' 

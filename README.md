@@ -139,6 +139,8 @@ interface ThemeConfig {
 
 ## 构建部署
 
+### 本地构建
+
 ```bash
 # 构建生产版本
 pnpm build
@@ -146,6 +148,30 @@ pnpm build
 # 启动生产服务器
 pnpm start
 ```
+
+### 部署到 Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/你的用户名/shadcn-theme)
+
+1. 点击上方按钮或访问 [vercel.com](https://vercel.com)
+2. 连接你的 GitHub 仓库
+3. 点击部署，Vercel 会自动处理构建和部署
+
+### 其他部署平台
+
+- **Netlify**: 支持静态导出部署
+- **GitHub Pages**: 通过 GitHub Actions 自动部署
+- **Railway**: 支持 Node.js 应用部署
+
+详细部署指南请参考 [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## 项目特色
+
+- 🎨 **12个 shadcn/ui 官方主题** - Slate、Gray、Zinc、Neutral、Stone、Red、Rose、Orange、Green、Blue、Yellow、Violet
+- 🌍 **8个社区精选主题** - GitHub Dark、Dracula、Nord、Solarized、Catppuccin、Tokyo Night、Gruvbox、One Dark
+- 🔗 **多种分享方式** - 分享链接、GitHub Gist、CodePen 导出
+- 📱 **完美响应式** - 左侧 1/3 主题选择，右侧 2/3 实时预览
+- ⚡ **极速构建** - 优化的 TypeScript 配置和 Next.js 14
 
 ## 许可证
 
