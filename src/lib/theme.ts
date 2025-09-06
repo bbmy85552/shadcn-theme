@@ -26,24 +26,34 @@ export const defaultTheme: ThemeConfig = {
 
 // 主题元数据，用于显示名称和描述
 export const themeMetadata = {
-  slate: { name: "Slate", description: "经典灰色主题，简洁专业" },
-  gray: { name: "Gray", description: "中性灰色主题，平衡稳重" },
-  zinc: { name: "Zinc", description: "锌灰色主题，现代简约" },
-  neutral: { name: "Neutral", description: "中性色主题，通用百搭" },
-  stone: { name: "Stone", description: "石头色主题，温暖自然" },
-  red: { name: "Red", description: "红色主题，热情活力" },
-  rose: { name: "Rose", description: "玫瑰色主题，温柔优雅" },
-  orange: { name: "Orange", description: "橙色主题，活力创意" },
-  green: { name: "Green", description: "绿色主题，清新自然" },
-  blue: { name: "Blue", description: "蓝色主题，专业可信" },
-  yellow: { name: "Yellow", description: "黄色主题，明亮乐观" },
-  violet: { name: "Violet", description: "紫色主题，神秘优雅" }
+  slate: { name: "Slate", description: "蓝灰色主题，简洁专业" },
+  blue: { name: "Blue", description: "明亮蓝色，专业可信" },
+  green: { name: "Green", description: "清新绿色，自然舒适" },
+  violet: { name: "Violet", description: "优雅紫色，神秘高贵" },
+  orange: { name: "Orange", description: "活力橙色，热情创意" },
+  red: { name: "Red", description: "热情红色，充满活力" },
+  rose: { name: "Rose", description: "温柔玫瑰，浪漫优雅" },
+  yellow: { name: "Yellow", description: "明亮黄色，阳光乐观" },
+  emerald: { name: "Emerald", description: "翡翠绿色，清新典雅" },
+  indigo: { name: "Indigo", description: "深邃靛蓝，沉稳大气" },
+  pink: { name: "Pink", description: "活泼粉色，青春时尚" }
 }
 
 export const presetThemes = {
-  // shadcn/ui 官方默认主题
+  // shadcn/ui 官方默认主题 - 重新优化，增强视觉差异
   slate: {
-    primary: "222.2 47.4% 11.2%",
+    primary: "215.4 16.3% 46.9%", // 更明显的蓝灰色
+    secondary: "210 40% 96%",
+    accent: "215.3 25% 26.7%", // 深蓝灰色强调
+    destructive: "0 84.2% 60.2%",
+    background: "0 0% 100%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
+    radius: 0.5
+  },
+  blue: {
+    primary: "221.2 83.2% 53.3%", // 明亮的蓝色
     secondary: "210 40% 96%",
     accent: "210 40% 96%",
     destructive: "0 84.2% 60.2%",
@@ -53,54 +63,43 @@ export const presetThemes = {
     border: "214.3 31.8% 91.4%",
     radius: 0.5
   },
-  gray: {
-    primary: "220.9 39.3% 11%",
-    secondary: "220 14.3% 95.9%",
-    accent: "220 14.3% 95.9%",
+  green: {
+    primary: "142.1 76.2% 36.3%", // 清新的绿色
+    secondary: "210 40% 96%",
+    accent: "142.1 76.2% 36.3%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
-    foreground: "220.9 39.3% 11%",
-    muted: "220 14.3% 95.9%",
-    border: "220 13% 91%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
     radius: 0.5
   },
-  zinc: {
-    primary: "240 5.9% 10%",
-    secondary: "240 4.8% 95.9%",
-    accent: "240 4.8% 95.9%",
+  violet: {
+    primary: "262.1 83.3% 57.8%", // 优雅的紫色
+    secondary: "210 40% 96%",
+    accent: "262.1 83.3% 57.8%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
-    foreground: "240 10% 3.9%",
-    muted: "240 4.8% 95.9%",
-    border: "240 5.9% 90%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
     radius: 0.5
   },
-  neutral: {
-    primary: "0 0% 9%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
+  orange: {
+    primary: "24.6 95% 53.1%", // 活力橙色
+    secondary: "210 40% 96%",
+    accent: "24.6 95% 53.1%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
-    foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
-    radius: 0.5
-  },
-  stone: {
-    primary: "24 9.8% 10%",
-    secondary: "60 4.8% 95.9%",
-    accent: "60 4.8% 95.9%",
-    destructive: "0 84.2% 60.2%",
-    background: "0 0% 100%",
-    foreground: "60 9.1% 97.8%",
-    muted: "60 4.8% 95.9%",
-    border: "60 4.8% 95.9%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
     radius: 0.5
   },
   red: {
-    primary: "0 72.2% 50.6%",
+    primary: "0 72.2% 50.6%", // 热情的红色
     secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
+    accent: "0 72.2% 50.6%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
     foreground: "0 0% 3.9%",
@@ -109,70 +108,59 @@ export const presetThemes = {
     radius: 0.5
   },
   rose: {
-    primary: "346.8 77.2% 49.8%",
+    primary: "346.8 77.2% 49.8%", // 温柔的玫瑰色
     secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
+    accent: "346.8 77.2% 49.8%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
     foreground: "0 0% 3.9%",
     muted: "0 0% 96.1%",
     border: "0 0% 89.8%",
-    radius: 0.5
-  },
-  orange: {
-    primary: "20.5 90.2% 48.2%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
-    destructive: "0 84.2% 60.2%",
-    background: "0 0% 100%",
-    foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
-    radius: 0.5
-  },
-  green: {
-    primary: "142.1 76.2% 36.3%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
-    destructive: "0 84.2% 60.2%",
-    background: "0 0% 100%",
-    foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
-    radius: 0.5
-  },
-  blue: {
-    primary: "221.2 83.2% 53.3%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
-    destructive: "0 84.2% 60.2%",
-    background: "0 0% 100%",
-    foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
-    radius: 0.5
+    radius: 0.75
   },
   yellow: {
-    primary: "47.9 95.8% 53.1%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
+    primary: "47.9 95.8% 53.1%", // 明亮的黄色
+    secondary: "60 4.8% 95.9%",
+    accent: "47.9 95.8% 53.1%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
     foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
+    muted: "60 4.8% 95.9%",
+    border: "60 4.8% 89.8%",
+    radius: 0.25
+  },
+  emerald: {
+    primary: "160 84% 39%", // 翡翠绿
+    secondary: "210 40% 96%",
+    accent: "160 84% 39%",
+    destructive: "0 84.2% 60.2%",
+    background: "0 0% 100%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
     radius: 0.5
   },
-  violet: {
-    primary: "262.1 83.3% 57.8%",
-    secondary: "0 0% 96.1%",
-    accent: "0 0% 96.1%",
+  indigo: {
+    primary: "239 84% 67%", // 靛蓝色
+    secondary: "210 40% 96%",
+    accent: "239 84% 67%",
     destructive: "0 84.2% 60.2%",
     background: "0 0% 100%",
-    foreground: "0 0% 3.9%",
-    muted: "0 0% 96.1%",
-    border: "0 0% 89.8%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
     radius: 0.5
+  },
+  pink: {
+    primary: "330 81% 60%", // 活泼的粉色
+    secondary: "210 40% 96%",
+    accent: "330 81% 60%",
+    destructive: "0 84.2% 60.2%",
+    background: "0 0% 100%",
+    foreground: "222.2 84% 4.9%",
+    muted: "210 40% 96%",
+    border: "214.3 31.8% 91.4%",
+    radius: 1.0
   }
 }
 
