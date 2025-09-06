@@ -7,6 +7,9 @@
 - 🎨 **实时主题预览** - 修改颜色后立即看到效果
 - 🍪 **Cookie 自动保存** - 主题配置自动保存到浏览器
 - 📦 **预设主题** - 内置多种精美的主题预设
+- 🌍 **社区主题库** - 包含 GitHub Dark、Dracula、Nord 等热门主题
+- 🔗 **网络导入** - 从 GitHub、Gist 或任意 URL 导入主题配置
+- 📤 **主题分享** - 生成分享链接，一键分享到各大平台
 - 🎯 **HSL 颜色支持** - 完整的 HSL 颜色空间支持
 - 📱 **响应式设计** - 适配各种屏幕尺寸
 - 🔧 **导入导出** - 支持主题配置的导入和导出
@@ -85,6 +88,54 @@ interface ThemeConfig {
 ```
 
 所有颜色值使用 HSL 格式，例如：`"221.2 83.2% 53.3%"`
+
+## 主题分享与导入
+
+### 分享主题
+
+1. **生成分享链接**：在"社区主题"标签页中点击"生成分享链接"
+2. **分享到平台**：支持一键分享到 GitHub Gist、CodePen 等平台
+3. **复制链接**：直接复制分享链接发送给他人
+
+### 导入主题
+
+支持多种导入方式：
+
+1. **从 URL 导入**：
+   - GitHub raw 文件：`https://raw.githubusercontent.com/user/repo/main/theme.json`
+   - Gist 链接：`https://gist.githubusercontent.com/user/id/raw/theme.json`
+   - 分享链接：应用生成的主题分享链接
+
+2. **本地文件导入**：直接上传 JSON 格式的主题配置文件
+
+3. **示例主题**：
+   ```bash
+   # 导入示例主题（需要启动开发服务器）
+   http://localhost:3000/themes/github-dark.json
+   http://localhost:3000/themes/dracula.json
+   http://localhost:3000/themes/nord.json
+   ```
+
+### 主题配置格式
+
+```json
+{
+  "name": "我的主题",
+  "description": "主题描述",
+  "author": "作者名称",
+  "config": {
+    "primary": "221.2 83.2% 53.3%",
+    "secondary": "210 40% 96%",
+    "accent": "210 40% 96%",
+    "destructive": "0 84.2% 60.2%",
+    "background": "0 0% 100%",
+    "foreground": "222.2 84% 4.9%",
+    "muted": "210 40% 96%",
+    "border": "214.3 31.8% 91.4%",
+    "radius": 0.5
+  }
+}
+```
 
 ## 构建部署
 

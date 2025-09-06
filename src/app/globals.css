@@ -73,4 +73,29 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* 主题切换动画 */
+  :root {
+    transition: 
+      --background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --foreground 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --primary 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --secondary 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --accent 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --muted 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --border 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      --radius 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* 为所有使用CSS变量的元素添加过渡效果 */
+  * {
+    transition-property: background-color, border-color, color, fill, stroke, border-radius;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+  }
+  
+  /* 特殊元素的过渡效果 */
+  .theme-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

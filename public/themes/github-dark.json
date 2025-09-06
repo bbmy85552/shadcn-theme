@@ -1,0 +1,17 @@
+{
+  "name": "GitHub Dark",
+  "description": "GitHub 暗色主题风格，适合开发者使用",
+  "author": "GitHub",
+  "version": "1.0.0",
+  "config": {
+    "primary": "213 94% 68%",
+    "secondary": "215 28% 17%",
+    "accent": "215 28% 17%",
+    "destructive": "0 84% 60%",
+    "background": "220 13% 9%",
+    "foreground": "220 9% 46%",
+    "muted": "215 28% 17%",
+    "border": "215 28% 17%",
+    "radius": 0.375
+  }
+}

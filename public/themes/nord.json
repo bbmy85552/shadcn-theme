@@ -1,0 +1,17 @@
+{
+  "name": "Nord",
+  "description": "北欧风格的冷色调主题，简洁清爽的蓝色系",
+  "author": "Arctic Ice Studio",
+  "version": "1.0.0",
+  "config": {
+    "primary": "213 32% 52%",
+    "secondary": "220 16% 96%",
+    "accent": "354 42% 56%",
+    "destructive": "354 42% 56%",
+    "background": "0 0% 100%",
+    "foreground": "220 16% 22%",
+    "muted": "220 14% 96%",
+    "border": "220 13% 91%",
+    "radius": 0.25
+  }
+}

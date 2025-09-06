@@ -1,0 +1,17 @@
+{
+  "name": "Dracula",
+  "description": "经典的 Dracula 暗色主题，神秘优雅的紫色调",
+  "author": "Dracula Team",
+  "version": "1.0.0",
+  "config": {
+    "primary": "265 89% 78%",
+    "secondary": "231 15% 18%",
+    "accent": "326 100% 74%",
+    "destructive": "0 100% 67%",
+    "background": "230 15% 15%",
+    "foreground": "60 30% 96%",
+    "muted": "231 15% 18%",
+    "border": "231 15% 25%",
+    "radius": 0.5
+  }
+}
